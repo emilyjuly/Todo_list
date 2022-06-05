@@ -1,0 +1,101 @@
+body {
+    font-family: 'Patrick Hand', cursive;
+    background-color: #202632;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 35%;
+    margin: auto;
+    border-radius: 7px;
+    background-color: #b6caee;
+    box-shadow: 2px 2px 10px rgba(158, 144, 155, 0.463);
+}
+
+.title{
+    background-color: #1a00aa;
+    width: 100%;
+    margin: auto;
+    border-radius: 7px;
+}
+
+.title, h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0.1em 0.1em 0.2em rgba(0, 0, 0, 0.671);
+    letter-spacing: 2.5px;
+    margin-bottom: 5px;
+}
+
+.new-item{
+    display: flex;
+    width: 100%;
+    border: none;
+    margin-top: 5px;
+}
+
+.new-item > input::placeholder{
+    color: white;
+    font-family: 'Patrick Hand', cursive;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-style: italic;
+    outline: none;
+}
+
+.item{
+    display: flex;
+    font-size: 15px;
+    color: #ffffff;
+    letter-spacing: 2px;
+    background-color: #1a00aa;
+    margin: auto;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.list{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: auto;
+}
+
+.item > input[type='button'] {
+    background-color: #b6caee;
+    color: #1a00aa;
+    border: solid 2.5px #1a00aa;
+    width: 25px;
+    height: 25px;
+    font: inherit;
+    text-align: center;
+    padding: auto;
+}
+.item > input[type='checkbox']{
+    width: 20px;
+    height: 20px;
+    align-items: flex-start;
+    display: flex;
+    justify-content:flex-start;
+}
+
+.new-item > input{
+    background-color: #1a00aa;
+    border: none;
+    margin: auto;
+    width: 100%;
+}
+
+.item > input[type='checkbox']:checked + div {
+    text-decoration: line-through;
+    color: #b6caee;
+}
